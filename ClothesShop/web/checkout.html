@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Checkout - FancyShop</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700,800" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/meanmenu.min.css" />
+        <link rel="stylesheet" href="css/venobox.css" />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />	
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/awesome-notifications/dist/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/awesome-notifications/dist/index.var.min.js"></script>
+
+    </head>
+    <body onload="loadData();">
+
+        <!--  Start Header  -->
+        <header id="header_area">
+            <div class="header_top_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="hdr_tp_left">
+                                <div class="call_area">
+                                    <span class="single_con_add"><i class="fa fa-phone"></i> +0123456789</span>
+                                    <span class="single_con_add"><i class="fa fa-envelope"></i> example@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6">
+                            <ul class="hdr_tp_right text-right">
+                                <li class="account_area"><a href="my-account.html"><i class="fa fa-lock"></i> My Account</a></li>
+                                <li class="currency_area"><a href="#"><i class="fa fa-gg "></i> $USD <i class="fa fa-caret-down"></i></a>
+                                    <ul class="csub-menu">
+                                        <li><a href="#">€Euro</a></li>
+                                        <li><a href="#">৳BDT</a></li>		
+                                    </ul>								
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--  HEADER START  -->
+
+            <div class="header_btm_area">
+                <div class="container">
+                    <div class="row">		
+                        <div class="col-xs-12 col-sm-12 col-md-3"> 
+                            <a class="logo" href="index.html"> <img alt="" src="img/logo.png"></a> 
+                        </div><!--  End Col -->
+
+                        <div class="col-xs-12 col-sm-12 col-md-9 text-right">
+                            <div class="menu_wrap">
+                                <div class="main-menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="index.html">home</a>					
+                                            </li>									
+                                            <li><a href="shop.html">shop</a>					
+                                            </li>									
+                                            <li><a href="cart.html">cart</a>					
+                                            </li>									
+                                        </ul>
+                                    </nav>
+                                </div> <!--  End Main Menu -->					
+
+                                <div class="mobile-menu text-right ">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="index.html">home</a>					
+                                            </li>									
+                                            <li><a href="shop.html">shop</a>					
+                                            </li>									
+                                            <li><a href="cart.html">cart</a>					
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div> <!--  End mobile-menu -->
+
+                            </div>
+                        </div><!--  End Col -->										
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--  End Header  -->
+
+        <!-- Page item Area -->
+        <div id="page_item_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-left">
+                        <h3>Shop Details</h3>
+                    </div>		
+
+                    <div class="col-sm-6 text-right">
+                        <ul class="p_items">
+                            <li><a href="#">home</a></li>
+                            <li><span>Checkout</span></li>
+                        </ul>					
+                    </div>	
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Checkout Page -->
+        <section class="checkout_page">
+            <div class="container">
+                <div id="message"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="title">
+                            <h3>Billing Details</h3>
+                        </div>
+                        <form class="checkout_form" action="#" method="post">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input name="first_name" id="first-name" placeholder="First name" class="form-control" type="text">
+                                </div>
+
+                                <div class="form-group col-md-6">								
+                                    <input name="last_name" id="last-name" placeholder="Last name" class="form-control" type="text">
+                                </div>
+                            </div>
+
+                            <div class="form-group">      
+                                <input name="company_name" id="address1" placeholder="Address line 1" class="form-control" type="text">                         
+                            </div>
+
+                            <div class="form-group">      
+                                <input name="company_name" id="address2" placeholder="Address line 2" class="form-control" type="text">                         
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input name="code" id="postal-code" placeholder="Postal code" class="form-control" type="text">
+                                </div>
+
+
+                                <div class="form-group col-md-6">
+                                    <input name="phone" id="mobile" placeholder="Phone number" class="form-control" type="text">
+                                </div>
+                            </div>
+
+                            <div class="form-group">  
+                                <label for="city">City</label>
+                                <div class="custom-select-wrapper" >
+                                    <select id="city" class="custom-select" >
+                                        <option value="0">Select</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!--                            <div class="form-group">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="checkbox1">
+                                                                <label class="custom-control-label" for="customCheck1">Same as your current address?</label>
+                                                            </div>                             
+                                                        </div>-->
+                        </form>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="title">
+                            <h3>your order</h3>
+                        </div>
+
+                        <div class="your-order-table table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="product-name">Product Name</th>
+                                        <th class="product-total">Total</th>
+                                        <th class="product-total">Quantity</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="st-tbody">
+                                    <tr id="st-item-tr">
+                                        <td id="st-item-title" class="product-name">Title</td>
+                                        <td id="st-item-subtotal" class="product-total"><span>Rs.00.00</span></td>
+                                        <td id="st-item-qty" class="product-total"><span>0</span></td>
+                                    </tr>
+                                    <tr id="st-order-subtotal-tr" class="sub-total">
+                                        <td class="product-name">Sub Total</td>
+                                        <td class="product-total"><span id="st-subtotal">Rs.00.00</span></td>
+                                    </tr>
+                                    <tr id="st-order-shipping-tr" class="sub-total">
+                                        <td class="product-name">Shipping</td>
+                                        <td class="product-total"><span id="st-shipping-amount">Rs.00.00</span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr id="st-order-total-tr">
+                                        <th>Total</th>
+                                        <td><span id="st-total" class="amount">Rs.00.00</span></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <div class="payment_method">           
+                            <ul>
+                                <li>
+                                    <div class="custom-control custom-radio">
+                                        <label class="custom-control-label" for="customRadio1">You can pay with your credit or debit card.</label>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed lobortis sem. Quisque at 
+                                            sapien ut odio</p>
+                                    </div>						
+
+                                </li>
+                            </ul>     
+                        </div>
+
+                        <div class="qc-button">
+                            <button type="button" class="btn border-btn" onclick="checkout();" >Process to Checkout</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--  FOOTER START  -->
+        <footer class="footer_area">
+            <div class="container">
+                <div class="row">				
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_ftr">
+                            <h4 class="sf_title">Contacts</h4>
+                            <ul>
+                                <li>4060 Reppert Coal Road Jackson, MS 39201 USA</li>
+                                <li>(+123) 685 78 <br> (+064) 987 245</li>
+                                <li>Contact@yourcompany.com</li>
+                            </ul>
+                        </div>
+                    </div> <!--  End Col -->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_ftr">
+                            <h4 class="sf_title">Information</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--  End Col -->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_ftr">
+                            <h4 class="sf_title">Services</h4>
+                            <ul>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Wish List</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order History</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--  End Col -->	
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_ftr">
+                            <h4 class="sf_title">Newsletter</h4>
+                            <div class="newsletter_form">
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have </p>
+                                <form method="post" class="form-inline">				
+                                    <input name="EMAIL" id="email" placeholder="Enter Your Email" class="form-control" type="email">
+                                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div> <!--  End Col -->
+
+                </div>
+            </div>
+
+
+            <div class="ftr_btm_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="ftr_social_icon">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="copyright_text text-center">&copy; 2024 All Rights Reserved FancyShop</p>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="payment_mthd_icon text-right">
+                                <ul>
+                                    <li><i class="fa fa-cc-paypal"></i></li>
+                                    <li><i class="fa fa-cc-visa"></i></li>
+                                    <li><i class="fa fa-cc-discover"></i></li>
+                                    <li><i class="fa fa-cc-mastercard"></i></li>
+                                    <li><i class="fa fa-cc-amex"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--  FOOTER END  -->
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.meanmenu.min.js"></script>
+        <script src="js/jquery.mixitup.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/venobox.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/simplePlayer.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/checkout.js"></script>
+    </body>
+</html>

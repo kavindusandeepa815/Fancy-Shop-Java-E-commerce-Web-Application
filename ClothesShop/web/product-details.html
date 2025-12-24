@@ -1,0 +1,365 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FancyShop - Ecommerce Bootstrap Template</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700,800" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/meanmenu.min.css" />
+        <link rel="stylesheet" href="css/venobox.css" />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />	
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/styleImage.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/awesome-notifications/dist/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/awesome-notifications/dist/index.var.min.js"></script>
+
+
+    </head>
+
+    <body onload="loadProduct();">
+
+        <!--  Start Header  -->
+        <header id="header_area">
+            <div class="header_top_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="hdr_tp_left">
+                                <div class="call_area">
+                                    <span class="single_con_add"><i class="fa fa-phone"></i> +0123456789</span>
+                                    <span class="single_con_add"><i class="fa fa-envelope"></i> example@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6">
+                            <ul class="hdr_tp_right text-right">
+                                <li class="account_area"><a href="my-account.html"><i class="fa fa-lock"></i> My Account</a></li>
+                                <li class="currency_area"><a href="#"><i class="fa fa-gg "></i> $USD <i class="fa fa-caret-down"></i></a>
+                                    <ul class="csub-menu">
+                                        <li><a href="#">€Euro</a></li>
+                                        <li><a href="#">৳BDT</a></li>		
+                                    </ul>								
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--  HEADER START  -->
+
+            <div class="header_btm_area">
+                <div class="container">
+                    <div class="row">		
+                        <div class="col-xs-12 col-sm-12 col-md-3"> 
+                            <a class="logo" href="index.html"> <img alt="" src="img/logo.png"></a> 
+                        </div><!--  End Col -->
+
+                        <div class="col-xs-12 col-sm-12 col-md-9 text-right">
+                            <div class="menu_wrap">
+                                <div class="main-menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="index.html">home</a>					
+                                            </li>									
+                                            <li><a href="shop.html">shop</a>					
+                                            </li>									
+                                            <li><a href="cart.html">cart</a>					
+                                            </li>									
+                                        </ul>
+                                    </nav>
+                                </div> <!--  End Main Menu -->					
+
+                                <div class="mobile-menu text-right ">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="index.html">home</a>					
+                                            </li>									
+                                            <li><a href="shop.html">shop</a>					
+                                            </li>									
+                                            <li><a href="cart.html">cart</a>					
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div> <!--  End mobile-menu -->
+
+                            </div>
+                        </div><!--  End Col -->										
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--  End Header  -->
+
+
+        <!-- Page item Area -->
+        <div id="page_item_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-left">
+                        <h3>Shop Details</h3>
+                    </div>		
+
+                    <div class="col-sm-6 text-right">
+                        <ul class="p_items">
+                            <li><a href="#">home</a></li>
+                            <li><span>Product</span></li>
+                        </ul>					
+                    </div>	
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Details Area  -->
+        <div class="prdct_dtls_page_area">
+            <div class="container">
+                <div class="row">
+                    <!-- Product Details Image -->
+                    <div class="col-md-6 col-xs-12">
+                        <div class="pd_img fix">
+                            <!--<a class="venobox" href="img/product/3.jpg"><img src="img/product/3.jpg" alt=""/></a>-->
+                            <div class="image-gallery">
+                                <div class="large-image">
+                                    <img id="mainImage" src="img/product/3.jpg" alt="Large View" style="width: 500px; height: 600px;">
+                                </div>
+                                <div class="small-images">
+                                    <img id="image1" src="img/product/3.jpg" alt="Small 1" onclick="changeImage(this)">
+                                    <img id="image2" src="img/product/3.jpg" alt="Small 2" onclick="changeImage(this)">
+                                    <img id="image3" src="img/product/3.jpg" alt="Small 3" onclick="changeImage(this)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Details Content -->
+                    <div class="col-md-6 col-xs-12">
+                        <div class="prdct_dtls_content">
+                            <h3 class="pd_price_dtls fix" id="title">This is Title</h3>
+                            <div class="pd_price_dtls fix">
+                                <!-- Product Price -->
+                                <div class="pd_price">
+                                    <span class="new" id="product-price">Rs. 20.00</span>
+                                </div>
+                            </div>
+                            <div class="pd_price_dtls fix">
+                                <!-- Product Category -->
+                                <span class="new">Category : </span>
+                                <span class="new" id="product-category">Shirt</span>
+                            </div>
+                            <div class="pd_price_dtls fix">
+                                <!-- Product Brand -->
+                                <span class="new">Brand : </span>
+                                <span class="new" id="product-brand">Gucci</span>
+                            </div>
+                            <div class="pd_img_size fix">
+                                <h4>size:</h4>
+                                <a class="d-none" id="product-size">s</a>
+                                <!--                                <a class="d-none">m</a>
+                                                                <a class="d-none">l</a>
+                                                                <a class="d-none">xl</a>-->
+                            </div>
+                            <div class="pd_clr_qntty_dtls fix">
+                                <div class="pd_clr">
+                                    <h4>color:</h4>
+                                    <a class="d-none" id="product-color" style="background: #000000; border-style: solid; border-width: 3px; border-color: black">color 1</a>
+                                    <!--                                    <a class="d-none" style="background: #FFFFFF; border-style: solid; border-width: 3px; border-color: black">color 2</a>
+                                                                        <a class="d-none" style="background: #A020F0; border-style: solid; border-width: 3px; border-color: black">color 3</a>
+                                                                        <a class="d-none" style="background: #0000FF; border-style: solid; border-width: 3px; border-color: black">color 4</a>
+                                                                        <a class="d-none" style="background: #FF0000; border-style: solid; border-width: 3px; border-color: black">color 5</a>-->
+                                </div>
+                                <div class="pd_qntty_area">
+                                    <h4>quantity:</h4>
+                                    <div class="pd_qty fix">
+                                        <input id="product-qtyMax" value="1" min="1" max="5" name="qttybutton" class="cart-plus-minus-box" type="number">
+                                        <input id="product-qty" value="50" min="1" name="qttybutton" class="cart-plus-minus-box" type="number" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product Action -->
+                            <div class="pd_btn fix">
+<!--                                <a class="btn btn-default acc_btn">Buy Now</a>-->
+                                <a id="add-to-cart-main" class="btn btn-default acc_btn btn_icn"><i class="fa fa-cart-plus"></i></a>
+                            </div>
+                            <div class="pd_share_area fix">
+                                <h4>share this on:</h4>
+                                <div class="pd_social_icon">
+                                    <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                    <a class="vimeo" href="#"><i class="fa fa-vimeo"></i></a>
+                                    <a class="google_plus" href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a class="tumblr" href="#"><i class="fa fa-tumblr"></i></a>
+                                    <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">					
+                        <div class="pd_tab_area fix">									
+                            <ul class="pd_tab_btn nav nav-tabs" role="tablist">
+                                <li>
+                                    <a class="active" href="#description" role="tab" data-toggle="tab">Description</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade show active" id="product-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                                        anim id est laborum.</p>					  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Related Product Area -->
+        <div class="related_prdct_area text-center">
+            <div class="container">		
+                <!-- Section Title -->
+                <div class="rp_title text-center"><h3>Related products</h3></div>
+
+                <div class="row" id="similar-product-main">
+
+                    <div id="similar-product" class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single_product">
+                            <div class="product_image">
+                                <a href="#" id="similar-product-a1">
+                                    <img id="similar-product-image" src="img/product/1.jpg" alt="" style="width: 200px; height: 150px;"/>
+                                </a>
+                            </div>
+
+                            <div class="product_btm_text">
+                                <h4 id="similar-product-title">Product Title</h4>
+                                <span id="similar-product-price" class="price">$123.00</span>
+                            </div>
+                        </div>								
+                    </div> <!-- End Col -->			
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--  FOOTER START  -->
+        <footer class="footer_area">
+            <div class="container">
+                <div class="row">				
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_ftr">
+                            <h4 class="sf_title">Contacts</h4>
+                            <ul>
+                                <li>4060 Reppert Coal Road Jackson, MS 39201 USA</li>
+                                <li>(+123) 685 78 <br> (+064) 987 245</li>
+                                <li>Contact@yourcompany.com</li>
+                            </ul>
+                        </div>
+                    </div> <!--  End Col -->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_ftr">
+                            <h4 class="sf_title">Information</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--  End Col -->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_ftr">
+                            <h4 class="sf_title">Services</h4>
+                            <ul>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Wish List</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order History</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--  End Col -->	
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_ftr">
+                            <h4 class="sf_title">Newsletter</h4>
+                            <div class="newsletter_form">
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have </p>
+                                <form method="post" class="form-inline">				
+                                    <input name="EMAIL" id="email" placeholder="Enter Your Email" class="form-control" type="email">
+                                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div> <!--  End Col -->
+
+                </div>
+            </div>
+
+
+            <div class="ftr_btm_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="ftr_social_icon">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="copyright_text text-center">&copy; 2024 All Rights Reserved FancyShop</p>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="payment_mthd_icon text-right">
+                                <ul>
+                                    <li><i class="fa fa-cc-paypal"></i></li>
+                                    <li><i class="fa fa-cc-visa"></i></li>
+                                    <li><i class="fa fa-cc-discover"></i></li>
+                                    <li><i class="fa fa-cc-mastercard"></i></li>
+                                    <li><i class="fa fa-cc-amex"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--  FOOTER END  -->
+
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.meanmenu.min.js"></script>
+        <script src="js/jquery.mixitup.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/venobox.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/simplePlayer.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/single-product.js"></script>
+    </body>
+</html>

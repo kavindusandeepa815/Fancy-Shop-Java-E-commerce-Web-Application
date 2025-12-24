@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cart - FancyShop</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700,800" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/meanmenu.min.css" />
+        <link rel="stylesheet" href="css/venobox.css" />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />	
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/awesome-notifications/dist/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/awesome-notifications/dist/index.var.min.js"></script>
+
+    </head>
+    <body onload="loadCartItems();">
+
+        <!--  Start Header  -->
+        <header id="header_area">
+            <div class="header_top_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="hdr_tp_left">
+                                <div class="call_area">
+                                    <span class="single_con_add"><i class="fa fa-phone"></i> +0123456789</span>
+                                    <span class="single_con_add"><i class="fa fa-envelope"></i> example@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6">
+                            <ul class="hdr_tp_right text-right">
+                                <li class="account_area"><a href="my-account.html"><i class="fa fa-lock"></i> My Account</a></li>
+                                <li class="currency_area"><a href="#"><i class="fa fa-gg "></i> $USD <i class="fa fa-caret-down"></i></a>
+                                    <ul class="csub-menu">
+                                        <li><a href="#">€Euro</a></li>
+                                        <li><a href="#">৳BDT</a></li>		
+                                    </ul>								
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--  HEADER START  -->
+
+            <div class="header_btm_area">
+                <div class="container">
+                    <div class="row">		
+                        <div class="col-xs-12 col-sm-12 col-md-3"> 
+                            <a class="logo" href="index.html"> <img alt="" src="img/logo.png"></a> 
+                        </div><!--  End Col -->
+
+                        <div class="col-xs-12 col-sm-12 col-md-9 text-right">
+                            <div class="menu_wrap">
+                                <div class="main-menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="index.html">home</a>					
+                                            </li>									
+                                            <li><a href="shop.html">shop</a>					
+                                            </li>									
+                                            <li><a href="cart.html">cart</a>					
+                                            </li>									
+                                        </ul>
+                                    </nav>
+                                </div> <!--  End Main Menu -->					
+
+                                <div class="mobile-menu text-right ">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="index.html">home</a>					
+                                            </li>									
+                                            <li><a href="shop.html">shop</a>					
+                                            </li>									
+                                            <li><a href="cart.html">cart</a>					
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div> <!--  End mobile-menu -->
+
+                            </div>
+                        </div><!--  End Col -->										
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--  End Header  -->
+
+
+        <!-- Page item Area -->
+        <div id="page_item_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-left">
+                        <h3>Cart</h3>
+                    </div>		
+
+                    <div class="col-sm-6 text-right">
+                        <ul class="p_items">
+                            <li><a href="#">home</a></li>
+                            <li><span>Cart</span></li>
+                        </ul>					
+                    </div>	
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Page -->
+        <div class="cart_page_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="cart_table_area table-responsive">
+                            <table class="table cart_prdct_table text-center">
+                                <thead>
+                                    <tr>
+                                        <th class="cpt_no">No.</th>
+                                        <th class="cpt_img">image</th>
+                                        <th class="cpt_pn">product name</th>
+                                        <th class="cpt_q">quantity</th>
+                                        <th class="cpt_p">price</th>
+                                        <th class="cpt_t">total</th>
+                                        <th class="cpt_r">remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart-item-container">
+                                    <tr id="cart-item-row">
+                                        <td><span class="cp_no">-</span></td>
+                                        <td><a href="#" id="cart-item-a" class="cp_img"><img id="cart-item-img" src="img/cart-prdct/1.jpg" alt="" /></a></td>
+                                        <td><a href="#" id="cart-item-title" class="cp_title">This is Product Title</a></td>
+                                                                                <td>										
+                                                                                    <div class="cp_quntty">																			
+                                                                                        <input disabled="" id="cart-item-qty" name="quantity" min="1" value="1" size="2" type="number">													
+                                                                                    </div>
+                                                                                </td>
+<!--                                        <td><p id="cart-item-qty" class="cp_price">0</p></td>-->
+                                        <td><p id="cart-item-price" class="cp_price">Rs.00.00</p></td>
+                                        <td><p id="cart-item-subtotal" class="cpp_total">Rs.00.00</p></td>
+                                        <td><a class="btn btn-default cp_remove removeFromCart"><i class="fa fa-trash"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-xs-12 cart-actions cart-button-cuppon">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <div class="cart-action">
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-5">
+                                <div class="cuppon-wrap">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-12 cart-checkout-process text-right">
+                        <div class="wrap">
+                            <p><span>Total Quantity</span><span id="cart-total-qty" >0</span></p>
+                            <h4><span>Grand total</span><span id="cart-total">Rs.00.00</span></h4>
+                            <a href="checkout.html" class="btn border-btn">process to checkout</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--  FOOTER START  -->
+        <footer class="footer_area">
+            <div class="container">
+                <div class="row">				
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_ftr">
+                            <h4 class="sf_title">Contacts</h4>
+                            <ul>
+                                <li>4060 Reppert Coal Road Jackson, MS 39201 USA</li>
+                                <li>(+123) 685 78 <br> (+064) 987 245</li>
+                                <li>Contact@yourcompany.com</li>
+                            </ul>
+                        </div>
+                    </div> <!--  End Col -->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_ftr">
+                            <h4 class="sf_title">Information</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--  End Col -->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_ftr">
+                            <h4 class="sf_title">Services</h4>
+                            <ul>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Wish List</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order History</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--  End Col -->	
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_ftr">
+                            <h4 class="sf_title">Newsletter</h4>
+                            <div class="newsletter_form">
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have </p>
+                                <form method="post" class="form-inline">				
+                                    <input name="EMAIL" id="email" placeholder="Enter Your Email" class="form-control" type="email">
+                                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div> <!--  End Col -->
+
+                </div>
+            </div>
+
+
+            <div class="ftr_btm_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="ftr_social_icon">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="copyright_text text-center">&copy; 2024 All Rights Reserved FancyShop</p>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="payment_mthd_icon text-right">
+                                <ul>
+                                    <li><i class="fa fa-cc-paypal"></i></li>
+                                    <li><i class="fa fa-cc-visa"></i></li>
+                                    <li><i class="fa fa-cc-discover"></i></li>
+                                    <li><i class="fa fa-cc-mastercard"></i></li>
+                                    <li><i class="fa fa-cc-amex"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--  FOOTER END  -->
+
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.meanmenu.min.js"></script>
+        <script src="js/jquery.mixitup.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/venobox.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/simplePlayer.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/cart.js"></script>
+    </body>
+</html>
